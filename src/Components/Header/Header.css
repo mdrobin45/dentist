@@ -1,0 +1,14 @@
+.container{
+    width: 95%;
+    margin: auto;
+}
+.primary-bg{
+    background: rgb(41 216 219);
+}
+.secondary-bg{
+    background: #01578C;
+}
+.activeLink{
+    border-bottom: 2px solid rgb(41 216 219);
+    color: #01578C;
+}
