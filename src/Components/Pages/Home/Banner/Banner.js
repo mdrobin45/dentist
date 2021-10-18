@@ -16,7 +16,7 @@ const Banner = () =>
       });
     return (
         <div className='banner-main'>
-            <section className='flex justify-between items-center container'>
+            <section className='container items-center justify-between lg:flex lg:flex-row sm:flex-col'>
                 <section className='w-2/4'>
                     <h3 className='text-2xl text-white py-4'>Your Oral Health Matters to Us</h3>
                     <hr className='w-1/4'/>

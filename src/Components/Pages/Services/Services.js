@@ -4,10 +4,24 @@ import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import './Services.css'
 import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Services = () =>
 {
     const [services] = useServices();
+    // Custom card details button
+    const SignInButton = styled(Button)({
+        background: '#29D8DB',
+        width: '20%',
+        padding: '10px 0',
+        margin: '0px auto 5rem auto',
+        display:'block',
+        fontSize: '17px',
+        borderRadius: '50px',
+        '&:hover': {
+            background: 'black'
+        }
+    });
     return (
         <div>
             <div className='m-auto pt-10 text-center w-2/4'>
@@ -21,6 +35,9 @@ const Services = () =>
                     services.slice(0,9).map(service=><ServicesCard key={service.id} service={service}/>)
                 }
             </div>
+            <div>
+                <Link to='/services'><SignInButton variant="contained">View all services</SignInButton></Link>
+            </div>
         </div>
     );
 };
@@ -33,6 +50,14 @@ const ServicesCard = (props) =>
     const { title, image, description,id } = props.service;
     const shortDescription = description.split(" ");
 
+
+    // Single service link setup
+    const history = useHistory();
+    const getCardId = (id) =>
+    {
+        history.push(`service/${id}`)
+    }
+    
     // Custom card details button
     const SignInButton = styled(Button)({
         background: '#29D8DB',
@@ -43,18 +68,9 @@ const ServicesCard = (props) =>
         fontSize: '17px',
         borderRadius: '50px',
         '&:hover': {
-          background: 'black'
+            background: 'black'
         }
-      });
-
-
-    // Single service link setup
-    const history = useHistory();
-    const getCardId = (id) =>
-    {
-        history.push(`service/${id}`)
-    }
-    
+    });
     return (
         <div className='p-6 rounded shadow-2xl'>
             <img className='rounded-2xl' src={image} alt="Service Thumbnail" />
