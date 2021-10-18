@@ -20,7 +20,7 @@ const Banner = () =>
                 <section className='w-2/4'>
                     <h3 className='text-2xl text-white py-4'>Your Oral Health Matters to Us</h3>
                     <hr className='w-1/4'/>
-                    <h1 className='font-bold py-4 text-4xl text-white'>Get Brighter Smile from London's Best Dentists</h1>
+                    <h1 className='font-bold py-4 text-5xl text-white'>Get Brighter Smile from London's Best Dentists</h1>
                 </section>
                 <section>
                     <form className='bg-white px-6 pb-20 rounded-lg'>

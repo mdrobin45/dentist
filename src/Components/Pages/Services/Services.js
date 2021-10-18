@@ -3,15 +3,24 @@ import useServices from '../../../Hooks/useServices';
 import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import './Services.css'
+import { useHistory } from 'react-router';
 
 const Services = () =>
 {
     const [services] = useServices();
     return (
-        <div className='grid gap-4 grid-cols-3 container py-20'>
-            {
-                services.slice(0,9).map(service=><ServicesCard service={service}/>)
-            }
+        <div>
+            <div className='m-auto pt-10 text-center w-2/4'>
+                <h2 className='text-5xl text-gray-600 font-bold text-center py-4'>Services</h2>
+                <hr className='m-auto w-2/6' />
+                <p className='text-lg py-3'>Our residents come from all parts of the world, bringing you a global expertise coupled with the cutting edge research and knowledge of the University of Rochester Medical Center.</p> 
+            </div>
+            
+            <div  className='grid gap-4 grid-cols-3 container py-20'>
+                {
+                    services.slice(0,9).map(service=><ServicesCard key={service.id} service={service}/>)
+                }
+            </div>
         </div>
     );
 };
@@ -21,7 +30,7 @@ const Services = () =>
 // Services card
 const ServicesCard = (props) =>
 {
-    const { title, image, description } = props.service;
+    const { title, image, description,id } = props.service;
     const shortDescription = description.split(" ");
 
     // Custom card details button
@@ -38,6 +47,13 @@ const ServicesCard = (props) =>
         }
       });
 
+
+    // Single service link setup
+    const history = useHistory();
+    const getCardId = (id) =>
+    {
+        history.push(`service/${id}`)
+    }
     
     return (
         <div className='p-6 rounded shadow-2xl'>
@@ -45,7 +61,7 @@ const ServicesCard = (props) =>
             <h3 className='font-bold py-3 text-2xl'>{title}</h3>
             <p className='text-lg'>{shortDescription.slice(0, 30).join(' ')}</p>
             <div>
-                <SignInButton variant="contained">Details</SignInButton>
+                <SignInButton onClick={()=>{getCardId(props.service.id)}} variant="contained">Details</SignInButton>
             </div>
         </div>
     )

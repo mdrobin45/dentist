@@ -1,60 +1,72 @@
 [
     {
+        "id": "1",
         "title": "Cosmetic Dentistry",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "Cosmetic dentistry is generally used to refer to any dental work that improves the appearance (though not necessarily the functionality) of teeth, gums and/or bite. It primarily focuses on improvement in dental aesthetics in color, position, shape, size, alignment and overall smile appearance.Many dentists refer to themselves as cosmetic dentists regardless of their specific education, specialty, training, and experience in this field. This has been considered unethical with a predominant objective of marketing to patients. The American Dental Association does not recognize cosmetic dentistry as a formal specialty area of dentistry.However, there are still dentists that promote themselves as cosmetic dentists."
     },
     {
+        "id": "2",
         "title": "Dental X-Rays​",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "Once photographic film has been exposed to X-ray radiation, it needs to be developed, traditionally using a process where the film is exposed to a series of chemicals in a dark room, as the films are sensitive to normal light. This can be a time-consuming process, and incorrect exposures or mistakes in the development process can necessitate retakes, exposing the patient to additional radiation. Digital X-rays, which replace the film with an electronic sensor, address some of these issues, and are becoming widely used in dentistry as the technology evolves. They may require less radiation and are processed much more quickly than conventional radiographic films, often instantly viewable on a computer. However digital sensors are extremely costly and have historically had poor resolution, though this is much improved in modern sensors."
     },
     {
+        "id": "3",
         "title": "Root Canals​",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "Root canal anatomy consists of the pulp chamber and root canals. Both contain the dental pulp. The smaller branches, referred to as accessory canals, are most frequently found near the root end (apex), but may be encountered anywhere along the root length. The total number of root canals per tooth depends on the number of the tooth roots ranging from one to four, five or more in some cases. Sometimes there are more than one root canal per root. Some teeth have a more variable internal anatomy than others.An unusual root canal shape, complex branching (especially the existence of horizontal branches), and multiple root canals are considered as the main causes of root canal treatment failures. (e.g. If a secondary root canal goes unnoticed by the dentist and is not cleaned and sealed, it will remain infected, causing the root canal therapy to fail)."
     },
     {
+        "id": "4",
         "title": "Dental implant",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "A dental implant (also known as an endosseous implant or fixture) is a surgical component that interfaces with the bone of the jaw or skull to support a dental prosthesis such as a crown, bridge, denture, or facial prosthesis or to act as an orthodontic anchor. The basis for modern dental implants is a biologic process called osseointegration, in which materials such as titanium or zirconia form an intimate bond to bone. The implant fixture is first placed so that it is likely to osseointegrate, then a dental prosthetic is added. A variable amount of healing time is required for osseointegration before either the dental prosthetic (a tooth, bridge or denture) is attached to the implant or an abutment is placed which will hold a dental prosthetic/crown."
     },
     {
+        "id": "5",
         "title": "Teeth Whitening",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "Tooth whitening or tooth bleaching is the process of lightening the color of human teeth.[1] Whitening is often desirable when teeth become yellowed over time for a number of reasons, and can be achieved by changing the intrinsic or extrinsic color of the tooth enamel.[2] The chemical degradation of the chromogens within or on the tooth is termed as bleachingHydrogen peroxide is analogous to carbamide peroxide as it is released when the stable complex is in contact with water. When it diffuses into the tooth, hydrogen peroxide acts as an oxidising agent that breaks down to produce unstable free radicals. In the spaces between the inorganic salts in tooth enamel, these unstable free radicals attach to organic pigment molecules resulting in small, less heavily pigmented components.[3] Reflecting less light, these smaller molecules create awhitening effect"
     },
     {
+        "id": "6",
         "title": "Braces & Implants",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "The application of braces moves the teeth as a result of force and pressure on the teeth. There are traditionally four basic elements used: brackets, bonding material, arch wire, and ligature elastic (also called an “O-ring”). The teeth move when the arch wire puts pressure on the brackets and teeth. Sometimes springs or rubber bands are used to put more force in a specific directionBraces have constant pressure which, over time, move teeth into the desired positions. The process loosens the tooth after which new bone grows in to support the tooth in its new position. This is called bone remodeling. Bone remodeling is a biomechanical process responsible for making bones stronger in response to sustained load-bearing activity and weaker in the absence of carrying a load. Bones are made of cells called osteoclasts and osteoblasts. Two different kinds of bone resorption are possible: direct resorption, which starts from the lining cells of the alveolar bone, and indirect or retrograde resorption, which occurs when the periodontal ligament has been subjected to an excessive amount and duration of compressive stress.[2] Another important factor associated with tooth movement is bone deposition. Bone deposition occurs in the distracted periodontal ligament. Without bone deposition, the tooth will loosen, and voids will occur distal to the direction of tooth movement"
     },
     {
+        "id": "7",
         "title": "Dental extraction",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "Extraction forceps are commonly used to remove teeth. Different shaped forceps are available depending on the type of tooth requiring removal, what side of the mouth (left or right) it is on and if it is an upper or lower tooth. The beaks of the forceps must grip onto the root of the tooth securely before pressure is applied along the long axis of the tooth towards the root.Different movements of the forceps can be employed to remove teeth. Generally, while keeping downwards pressure attempts to move the tooth towards the cheek side (buccal) and then the opposite direction (palatal or lingual) are made to loosen the tooth from its socket.[1] For single, conical-rooted teeth such as the incisors, rotatory movements are also used.[1] A ‘figure of eight’ movement can be used to extract lower"
     },
     {
+        "id": "8",
         "title": "Cosmetic Dentistry",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "Cosmetic dentistry is generally used to refer to any dental work that improves the appearance (though not necessarily the functionality) of teeth, gums and/or bite. It primarily focuses on improvement in dental aesthetics in color, position, shape, size, alignment and overall smile appearance.Many dentists refer to themselves as cosmetic dentists regardless of their specific education, specialty, training, and experience in this field. This has been considered unethical with a predominant objective of marketing to patients. The American Dental Association does not recognize cosmetic dentistry as a formal specialty area of dentistry.However, there are still dentists that promote themselves as cosmetic dentists."
     },
     {
+        "id": "9",
         "title": "Teeth Whitening",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "Tooth whitening or tooth bleaching is the process of lightening the color of human teeth.[1] Whitening is often desirable when teeth become yellowed over time for a number of reasons, and can be achieved by changing the intrinsic or extrinsic color of the tooth enamel.[2] The chemical degradation of the chromogens within or on the tooth is termed as bleachingHydrogen peroxide is analogous to carbamide peroxide as it is released when the stable complex is in contact with water. When it diffuses into the tooth, hydrogen peroxide acts as an oxidising agent that breaks down to produce unstable free radicals. In the spaces between the inorganic salts in tooth enamel, these unstable free radicals attach to organic pigment molecules resulting in small, less heavily pigmented components.[3] Reflecting less light, these smaller molecules create awhitening effect"
     },
     {
+        "id": "10",
         "title": "Root Canals​",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "Root canal anatomy consists of the pulp chamber and root canals. Both contain the dental pulp. The smaller branches, referred to as accessory canals, are most frequently found near the root end (apex), but may be encountered anywhere along the root length. The total number of root canals per tooth depends on the number of the tooth roots ranging from one to four, five or more in some cases. Sometimes there are more than one root canal per root. Some teeth have a more variable internal anatomy than others.An unusual root canal shape, complex branching (especially the existence of horizontal branches), and multiple root canals are considered as the main causes of root canal treatment failures. (e.g. If a secondary root canal goes unnoticed by the dentist and is not cleaned and sealed, it will remain infected, causing the root canal therapy to fail)."
     },
     {
+        "id": "11",
         "title": "Cosmetic Dentistry",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "Cosmetic dentistry is generally used to refer to any dental work that improves the appearance (though not necessarily the functionality) of teeth, gums and/or bite. It primarily focuses on improvement in dental aesthetics in color, position, shape, size, alignment and overall smile appearance.Many dentists refer to themselves as cosmetic dentists regardless of their specific education, specialty, training, and experience in this field. This has been considered unethical with a predominant objective of marketing to patients. The American Dental Association does not recognize cosmetic dentistry as a formal specialty area of dentistry.However, there are still dentists that promote themselves as cosmetic dentists."
     },
     {
+        "id": "12",
         "title": "Root Canals​",
         "image": "https://i.ibb.co/Ksb6YDR/service-3.jpg",
         "description": "Root canal anatomy consists of the pulp chamber and root canals. Both contain the dental pulp. The smaller branches, referred to as accessory canals, are most frequently found near the root end (apex), but may be encountered anywhere along the root length. The total number of root canals per tooth depends on the number of the tooth roots ranging from one to four, five or more in some cases. Sometimes there are more than one root canal per root. Some teeth have a more variable internal anatomy than others.An unusual root canal shape, complex branching (especially the existence of horizontal branches), and multiple root canals are considered as the main causes of root canal treatment failures. (e.g. If a secondary root canal goes unnoticed by the dentist and is not cleaned and sealed, it will remain infected, causing the root canal therapy to fail)."
