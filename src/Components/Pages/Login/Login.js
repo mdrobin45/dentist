@@ -7,6 +7,7 @@ import './Login.css'
 import googleIcon from '../../images/google.png'
 import githubIcon from '../../images/github.png'
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth'
 
 const Login = () =>
 {
@@ -20,6 +21,10 @@ const Login = () =>
       background: 'black'
     }
   });
+
+
+  // Destructure auth context
+  const { loginWithGoogle } = useAuth();
   return (
     <div className='flex py-32 container justify-between'>
       <div className='w-2/4'>
@@ -37,7 +42,7 @@ const Login = () =>
           <SignInButton size="large" variant="contained" endIcon={<VpnKeyIcon />}>Login</SignInButton>
         </div>
         <hr />
-        <div className='flex shadow rounded-lg justify-center items-center mt-6 p-3 border-2 cursor-pointer'>
+        <div onClick={loginWithGoogle} className='flex shadow rounded-lg justify-center items-center mt-6 p-3 border-2 cursor-pointer'>
           <img className='w-10' src={googleIcon} alt="Continue with google" />
           <h3 className='text-2xl pl-3'>Continue with Google</h3>
         </div>

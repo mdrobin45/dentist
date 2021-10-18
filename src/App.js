@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import About from './Components/Pages/About/About';
@@ -7,47 +7,48 @@ import Contact from './Components/Pages/Contact/Contact';
 import Home from './Components/Pages/Home/Home';
 import NotFound from './Components/Pages/NotFound/NotFound';
 import Services from './Components/Pages/Services/Services';
-import Login from './Components/Pages/Login/Login'
+import Login from './Components/Pages/Login/Login';
 import Register from './Components/Pages/Register/Register';
-import useServices from './Hooks/useServices';
+import AuthProvider from './Context/AuthProvider';
+import PrivetRoute from './PrivetRoute/PrivetRoute';
 
 
 
 const App = () =>
 {
   return (
-    <>
+    <AuthProvider>
       <Router>
-        <Header/>
+        <Header />
         <Switch>
           <Route exact path='/'>
-            <Home/>
+            <Home />
           </Route>
           <Route exact path='/home'>
-            <Home/>
+            <Home />
           </Route>
           <Route exact path='/about'>
-            <About/>
+            <About />
           </Route>
           <Route exact path='/services'>
-            <Services/>
+            <Services />
           </Route>
           <Route exact path='/contact'>
-            <Contact/>
+            <Contact />
           </Route>
           <Route exact path='/login'>
-            <Login/>
+            <Login />
           </Route>
           <Route exact path='/register'>
-            <Register/>
+            <Register />
           </Route>
           <Route exact path='*'>
-            <NotFound/>
+            <NotFound />
           </Route>
         </Switch>
-        <Footer/>
+        <Footer />
       </Router>
-    </>
+    </AuthProvider>
   );
 };
 

@@ -10,7 +10,7 @@ const Services = () =>
     return (
         <div className='grid gap-4 grid-cols-3 container py-20'>
             {
-                services.slice(0,6).map(service=><ServicesCard service={service}/>)
+                services.slice(0,9).map(service=><ServicesCard service={service}/>)
             }
         </div>
     );
