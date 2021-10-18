@@ -9,8 +9,12 @@ import NotFound from './Components/Pages/NotFound/NotFound';
 import Services from './Components/Pages/Services/Services';
 import Login from './Components/Pages/Login/Login'
 import Register from './Components/Pages/Register/Register';
+import useServices from './Hooks/useServices';
 
-const App = () => {
+
+
+const App = () =>
+{
   return (
     <>
       <Router>
