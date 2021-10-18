@@ -15,7 +15,7 @@ const Header = () => {
                 <NavLink activeClassName='activeLink' className='px-3 mx-3 text-lg' to='/about'>About</NavLink>
                 <NavLink activeClassName='activeLink' className='px-3 mx-3 text-lg' to='/services'>Services</NavLink>
                 <NavLink activeClassName='activeLink' className='px-3 mx-3 text-lg' to='/contact'>Contact</NavLink>
-                <NavLink className='mx-3 primary-bg font-bold px-10 py-3 rounded-2xl text-lg' to='/get-appointment'>Sign in</NavLink>
+                <NavLink className='mx-3 primary-bg font-bold px-10 py-3 rounded-2xl text-lg' to='/login'>Login</NavLink>
             </div>
         </div>
     );

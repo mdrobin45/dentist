@@ -7,6 +7,8 @@ import Contact from './Components/Pages/Contact/Contact';
 import Home from './Components/Pages/Home/Home';
 import NotFound from './Components/Pages/NotFound/NotFound';
 import Services from './Components/Pages/Services/Services';
+import Login from './Components/Pages/Login/Login'
+import Register from './Components/Pages/Register/Register';
 
 const App = () => {
   return (
@@ -28,6 +30,12 @@ const App = () => {
           </Route>
           <Route exact path='/contact'>
             <Contact/>
+          </Route>
+          <Route exact path='/login'>
+            <Login/>
+          </Route>
+          <Route exact path='/register'>
+            <Register/>
           </Route>
           <Route exact path='*'>
             <NotFound/>
