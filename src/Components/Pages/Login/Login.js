@@ -24,7 +24,7 @@ const Login = () =>
 
 
   // Destructure auth context
-  const { loginWithGoogle,loginWithEmailAndPassword,loginWithGithub } = useAuth();
+  const { loginWithGoogle,error,loginWithEmailAndPassword,loginWithGithub } = useAuth();
   return (
     <div className='flex py-32 container justify-between'>
       <div className='w-2/4'>
@@ -32,7 +32,8 @@ const Login = () =>
       </div>
 
       <form className='m-auto rounded p-10 shadow-2xl w-2/4'>
-      <h2 className='font-bold pb-6 text-3xl text-center'>Please Login</h2>
+        <h2 className='font-bold pb-6 text-3xl text-center'>Please Login</h2>
+        <strong className='font-bold text-center py-3 text-lg text-red-600'>{error}</strong>
         <div>
           <TextField required fullWidth type='email' label="Email" id="fullWidth" />
         </div>

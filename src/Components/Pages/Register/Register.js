@@ -24,7 +24,7 @@ const Register = () =>
   });
 
   // Destructure firebase
-  const { getEmail, getPassword,registerWithEmailAndPassword,loginWithGithub,loginWithGoogle } = useAuth();
+  const { getEmail,error, getPassword,registerWithEmailAndPassword,loginWithGithub,loginWithGoogle } = useAuth();
   return (
     <div className='flex py-32 container justify-between'>
       <div className='w-2/4'>
@@ -32,7 +32,8 @@ const Register = () =>
       </div>
 
       <form className='m-auto rounded p-10 shadow-2xl w-2/4'>
-      <h2 className='font-bold pb-6 text-3xl text-center'>Please Register</h2>
+        <h2 className='font-bold pb-6 text-3xl text-center'>Please Register</h2>
+        <strong className='font-bold text-lg py-3 text-center text-red-600'>{error}</strong>
         <div>
           <TextField onBlur={getEmail} required fullWidth type='email' label="Email" id="fullWidth" />
         </div>

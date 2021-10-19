@@ -14,6 +14,7 @@ const useFirebase = () =>
     const [error, setError] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [isLogin, setIsLogin] = useState(false);
 
 
 
@@ -111,7 +112,18 @@ const useFirebase = () =>
         })
     },[])
     
-    console.log(user);
+
+    // Check is login
+    useEffect(() =>
+    {
+       if (user.email) {
+            setIsLogin(true);
+       } else {
+           setIsLogin(false)
+        }
+    },[user.email])
+    
+    
     // Return necessary functions && states
     return {
         registerWithEmailAndPassword,
@@ -121,6 +133,7 @@ const useFirebase = () =>
         logOut,
         loginWithGithub,
         getPassword,
+        isLogin,
         user,
         error
     }

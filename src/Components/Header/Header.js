@@ -1,4 +1,4 @@
-import React from 'react';
+import  {Fragment, React} from 'react';
 import './Header.css'
 import logo from '../images/logo.png'
 import { NavLink } from 'react-router-dom';
@@ -9,7 +9,8 @@ const Header = () =>
     // Destructure firebase auth
     const { user,logOut } = useAuth();
     return (
-        <div className='container items-center flex justify-between'>
+        <>
+          <div className='container items-center flex justify-between'>
             <div>
                 <NavLink to='/home'><img src={logo} alt="Logo" /></NavLink>
             </div>
@@ -30,6 +31,8 @@ const Header = () =>
                 {user.email && <img className='w-10 rounded-full' src={user.photoURL} alt="Profile"/>}
             </div>
         </div>
+        </>
+        
     );
 };
 
