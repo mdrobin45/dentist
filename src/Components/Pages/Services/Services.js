@@ -4,11 +4,13 @@ import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import './Services.css'
 import { useHistory } from 'react-router';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Services = () =>
 {
     const [services] = useServices();
+
+
     // Custom View all button
     const ViewAllService = styled(Button)({
         background: '#29D8DB',
@@ -53,9 +55,10 @@ const ServicesCard = (props) =>
 
     // Single service link setup
     const history = useHistory();
+
     const getCardId = (id) =>
     {
-        history.push(`service/${id}`)
+        history.push(`/service/${id}`)
     }
     
     // Custom card details button
