@@ -8,9 +8,9 @@ import { BsTwitter,BsInstagram,BsLinkedin } from 'react-icons/bs';
 const Footer = () => {
     return (
         <div className=''>
-            <section className='flex py-10 container justify-between'>
+            <section className='container justify-between md:flex md:text-left py-10 text-center'>
                 <div>
-                    <NavLink to='/home'><img src={logo} alt="Logo" /></NavLink>
+                    <NavLink to='/home'><img className='w-full' src={logo} alt="Logo" /></NavLink>
                 </div>
                 <div>
                     <h3 className='font-bold text-2xl pb-3'>Call Us</h3>
@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
             </section>
             <hr />
-            <section className='flex container justify-between py-6'>
+            <section className='container justify-between md:flex md:text-left py-6 text-center'>
                 <div><p className='text-lg text-gray-500'>Copyright © 2021 Dental Clinic</p></div>
                 <div><p className='text-lg text-gray-500'>Powered by Robin Dental Clinic</p></div>
             </section>

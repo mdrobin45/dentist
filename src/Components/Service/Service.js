@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 
 const Service = () =>
 {
-    const [services, setServices] = useState([]);
+   /*  const [services, setServices] = useState([]);
     const { idService } = useParams();
     console.log(idService);
 
@@ -14,7 +14,7 @@ const Service = () =>
             .then(res => res.json())
             .then(data => console.log(data));
     }, []);
-    console.log(services);
+    console.log(services); */
 
     return (
         <div>

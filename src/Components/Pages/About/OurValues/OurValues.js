@@ -20,13 +20,13 @@ const OurValues = () =>
     });
     return (
         <div>
-            <div className='m-auto pt-10 text-center w-2/4'>
+            <div className='m-auto md:w-2/4 pt-10 text-center'>
                 <h2 className='text-5xl text-gray-600 font-bold text-center py-4'>Our Values</h2>
                 <hr className='m-auto w-2/6' />
                 <p className='text-lg py-3'>Our residents come from all parts of the world, bringing you a global expertise coupled with the cutting edge research and knowledge of the University of Rochester Medical Center.</p> 
             </div>
 
-            <div className='grid py-16 container gap-4 grid-cols-2'>
+            <div className='grid py-16 container gap-4 md:grid-cols-2'>
                 <ValuesCard
                     number='01'
                     title='Compassion'

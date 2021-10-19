@@ -17,12 +17,12 @@ const Banner = () =>
     return (
         <div className='banner-main'>
             <section className='container items-center justify-between lg:flex lg:flex-row sm:flex-col'>
-                <section className='w-2/4'>
+                <section className='md:text-left md:w-2/4 text-center w-full'>
                     <h3 className='text-2xl text-white py-4'>Your Oral Health Matters to Us</h3>
-                    <hr className='w-1/4'/>
+                    <hr className='m-auto md:m-0 w-1/4'/>
                     <h1 className='font-bold py-4 text-5xl text-white'>Get Brighter Smile from London's Best Dentists</h1>
                 </section>
-                <section>
+                <section className='md:mt-0 mt-20'>
                     <form className='bg-white px-6 pb-20 rounded-lg'>
                         <h2 className='text-gray-700 py-10 text-2xl font-bold text-center'>Book a Free Consultation</h2>
                         <div className='flex my-2 justify-between'>

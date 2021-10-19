@@ -20,13 +20,13 @@ const Contact = () =>
     });
     return (
         <>
-            <div className='m-auto pt-10 text-center w-2/4'>
+            <div className='m-auto pt-10 text-center md:w-2/4'>
                 <h2 className='text-5xl text-gray-600 font-bold text-center py-4'>Contact</h2>
                 <hr className='m-auto w-2/6' />
                 <p className='text-lg py-3'>Our residents come from all parts of the world, bringing you a global expertise coupled with the cutting edge research and knowledge of the University of Rochester Medical Center.</p> 
             </div>
-            <div className='flex justify-between container rounded-lg shadow-lg border-2 py-20'>
-                <div className='w-2/4'>
+            <div className='md:flex justify-between container rounded-lg shadow-lg border-2 py-20'>
+                <div className='md:w-2/4'>
                     <form className='bg-white px-6 pb-20 rounded-lg'>
                         <div className='flex my-2 justify-between'>
                             <TextField style={{ width: '48%' }} className='bg-gray-100' type='text' label="First Name" id="fullWidth" />
@@ -53,7 +53,7 @@ const Contact = () =>
                         </div>
                     </form>
                 </div>
-                <div className='w-2/4'>
+                <div className='md:p-6 md:w-2/4 p-6'>
                     <h2 className='text-4xl py-3 font-bold'>Have Any Queries?</h2>
                     <p className='text-lg pb-10'>Wish to get a free consultation or a quick checkup to identify the kind of treatment you need? Just give us a call or submit the form here.</p>
                     <hr />

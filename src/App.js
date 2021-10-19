@@ -43,9 +43,9 @@ const App = () =>
           <Route exact path='/register'>
             <Register />
           </Route>
-          <Route exact path='/service/:idService'>
+          <PrivetRoute exact path='/service/:idService'>
             <Service/>
-          </Route>
+          </PrivetRoute>
           <Route exact path='*'>
             <NotFound />
           </Route>

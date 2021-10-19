@@ -20,11 +20,11 @@ const DentalExcellence = () =>
 
     
     return (
-        <div className='flex container items-center py-20 items-start justify-between'>
-            <section className='w-2/4'>
+        <div className='container md:flex md:items-center md:justify-between py-20'>
+            <section className='md:w-2/4 w-full'>
                 <img className='rounded-3xl' src={HomeDentist} alt="Home Dentist" />
             </section>
-            <section className='w-2/4'>
+            <section className='md:w-2/4 w-full'>
                 <h2 className='font-bold py-6 text-4xl text-gray-700'>Committed To Dental Excellence</h2>
                 <hr />
                 <p className='text-lg py-3'>We are committed to adopting state-of-the-art technology and for our team to remain one step ahead. At Dental Excellence UK, we live and breathe digital dentistry. It's this rich experience that makes our clinic so unique. We're raising standards every day.</p>
