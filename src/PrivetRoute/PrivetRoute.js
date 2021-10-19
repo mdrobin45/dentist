@@ -3,7 +3,10 @@ import useAuth from '../Hooks/useAuth'
 
 const PrivetRoute = ({ children, ...rest }) =>
 {
-    const {user} = useAuth();
+    const { user,isLogin } = useAuth();
+    if (isLogin) {
+        return children
+    }
     return (
         <Route
             {...rest}
