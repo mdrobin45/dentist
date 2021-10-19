@@ -7,8 +7,6 @@ const Service = () =>
     const [services] = useServices();
     const { idService } = useParams();
 
-    console.log(idService);
-
     const service = services?.find(item => item.id === idService);
 
     console.log(services);
