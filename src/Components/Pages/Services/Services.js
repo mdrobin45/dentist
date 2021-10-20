@@ -3,13 +3,12 @@ import useServices from '../../../Hooks/useServices';
 import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import './Services.css'
-import { useHistory } from 'react-router';
 import { Link, NavLink } from 'react-router-dom';
+import SingleService from '../SingleService/SingleService';
 
 const Services = () =>
 {
     const [services] = useServices();
-
 
     // Custom View all button
     const ViewAllService = styled(Button)({
@@ -51,37 +50,15 @@ const ServicesCard = (props) =>
 {
     const { title, image, description,id } = props.service;
     const shortDescription = description.split(" ");
+    <SingleService services='kaj ore na'></SingleService>
 
 
-    // Single service link setup
-    const history = useHistory();
-
-    const getCardId = (id) =>
-    {
-        history.push(`/service/${id}`)
-    }
-    
-    // Custom card details button
-    const SignInButton = styled(Button)({
-        background: '#29D8DB',
-        width: '50%',
-        padding: '10px 0',
-        margin: '20px auto 0 auto',
-        display:'block',
-        fontSize: '17px',
-        borderRadius: '50px',
-        '&:hover': {
-            background: 'black'
-        }
-    });
     return (
         <div className='p-6 rounded shadow-2xl'>
             <img className='rounded-2xl' src={image} alt="Service Thumbnail" />
             <h3 className='font-bold py-3 text-2xl'>{title}</h3>
             <p className='text-lg'>{shortDescription.slice(0, 30).join(' ')}</p>
-            <div>
-                <SignInButton onClick={()=>{getCardId(props.service.id)}} variant="contained">Details</SignInButton>
-            </div>
+            <NavLink to={`services/${id}`}>Details</NavLink>
         </div>
     )
 }

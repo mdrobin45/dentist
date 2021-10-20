@@ -14,7 +14,7 @@ const useFirebase = () =>
     const [error, setError] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [isLogin, setIsLogin] = useState(false);
+    const [isLogin, setIsLogin] = useState(true);
 
 
 
@@ -39,8 +39,10 @@ const useFirebase = () =>
         createUserWithEmailAndPassword(auth, email, password)
             .then(userCredential =>
             {
-                setUser(userCredential.user)
-            }).catch(error =>
+                setUser(userCredential.user);
+            }).finally(() =>
+                setIsLogin(false)
+            ).catch(error =>
             {
                 setError(error.message);
             })
@@ -54,7 +56,10 @@ const useFirebase = () =>
             .then(userCredential =>
             {
                 setUser(userCredential.user);
-            }).catch(error =>
+                setIsLogin(true);
+            }).finally(() =>
+                setIsLogin(false)
+            ).catch(error =>
             {
                 setError(error.message);
             })
@@ -69,7 +74,10 @@ const useFirebase = () =>
             .then(result =>
             {
                 setUser(result.user);
-            }).catch(error =>
+                setIsLogin(true);
+            }).finally(() =>
+                setIsLogin(false)
+            ).catch(error =>
             {
                 setError(error.message);
             });
@@ -83,7 +91,10 @@ const useFirebase = () =>
             .then(result =>
             {
                 setUser(result.user);
-            }).catch(error =>
+                setIsLogin(true);
+            }).finally(() =>
+                setIsLogin(false)
+            ).catch(error =>
             {
                 setError(error.message);
             })
@@ -95,7 +106,10 @@ const useFirebase = () =>
     {
         signOut(auth).then(() => {
             setUser({})
-          }).catch((error) => {
+            setIsLogin(false);
+          }).finally(() =>
+                setIsLogin(false)
+            ).catch((error) => {
                 setError(error.message)
           });
     }
@@ -109,19 +123,10 @@ const useFirebase = () =>
             if (user) {
                 setUser(user);
             }
+            setIsLogin(false)
         })
     },[])
     
-
-    // Check is login
-    useEffect(() =>
-    {
-       if (user.email) {
-            setIsLogin(true);
-       } else {
-           setIsLogin(false)
-        }
-    },[user.email])
     
     
     // Return necessary functions && states

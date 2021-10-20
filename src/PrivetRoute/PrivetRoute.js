@@ -5,14 +5,14 @@ const PrivetRoute = ({ children, ...rest }) =>
 {
     const { user,isLogin } = useAuth();
     if (isLogin) {
-        return children
+        return children;
     }
     return (
         <Route
             {...rest}
             render={({ location }) => user.email ? (children) : (<Redirect
                 to={{
-                    pathname: './login',
+                    pathname: '/login',
                     state:{from:location}
                 }}
             />
