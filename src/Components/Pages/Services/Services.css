@@ -2,3 +2,7 @@
     width: 95%;
     margin: auto;
 }
+.detailButton {
+    padding: 15px 46px;
+    background: rgb(41 216 219);
+}

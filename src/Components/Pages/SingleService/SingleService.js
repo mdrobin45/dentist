@@ -6,11 +6,9 @@ import useServices from '../../../Hooks/useServices'
 const SingleService = () =>
 {
     const { idService } = useParams();
-    const [services] = useServices([]);
+    const [allService] = useServices([]);
     
-    const service = services?.find(service => service.id === idService);
-    console.log(service);
-    console.log(service?.title);
+    const service = allService?.find(service => service?.id === idService);
 
     return (
         <div className='m-auto p-10 mt-16 shadow-2xl w-10/12'>

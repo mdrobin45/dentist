@@ -58,7 +58,9 @@ const ServicesCard = (props) =>
             <img className='rounded-2xl' src={image} alt="Service Thumbnail" />
             <h3 className='font-bold py-3 text-2xl'>{title}</h3>
             <p className='text-lg'>{shortDescription.slice(0, 30).join(' ')}</p>
-            <NavLink to={`services/${id}`}>Details</NavLink>
+            <div className='text-center mt-6'>
+                <NavLink className='detailButton text-white font-bold text-lg' to={`services/${id}`}>Details</NavLink>
+            </div>
         </div>
     )
 }

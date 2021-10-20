@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 const useServices = () =>
 {
     const [services, setServices] = useState([]);
+    const [allService, setAllService] = useState([]);
     useEffect(() =>
     {
         fetch('/Services.JSON')
@@ -10,7 +11,14 @@ const useServices = () =>
             .then(data => setServices(data));
     }, []);
 
-    return [services]
+    useEffect(() =>
+    {
+        if (services.length) {
+           setAllService(services); 
+        }
+    },[services])
+
+    return [services,allService]
 };
 
 export default useServices;
