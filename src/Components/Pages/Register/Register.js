@@ -26,12 +26,12 @@ const Register = () =>
   // Destructure firebase
   const { getEmail,error, getPassword,registerWithEmailAndPassword,loginWithGithub,loginWithGoogle } = useAuth();
   return (
-    <div className='flex py-32 container justify-between'>
-      <div className='w-2/4'>
-        <img className='w-10/12' src={registerVector} alt="Login Vector" />
+    <div className='md:flex py-32 container justify-between'>
+      <div className='md:w-2/4'>
+        <img className='md:w-10/12' src={registerVector} alt="Login Vector" />
       </div>
 
-      <form className='m-auto rounded p-10 shadow-2xl w-2/4'>
+      <form className='m-auto rounded p-10 shadow-2xl md:w-2/4'>
         <h2 className='font-bold pb-6 text-3xl text-center'>Please Register</h2>
         <strong className='font-bold text-lg py-3 text-center text-red-600'>{error}</strong>
         <div>
