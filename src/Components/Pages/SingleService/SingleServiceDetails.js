@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import useServices from '../../../Hooks/useServices'
 
-const SingleService = () =>
+const SingleServiceDetails = () =>
 {
     const { idService } = useParams();
     const [allService] = useServices([]);
@@ -23,4 +23,4 @@ const SingleService = () =>
     );
 };
 
-export default SingleService;
+export default SingleServiceDetails;

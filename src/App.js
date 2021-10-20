@@ -11,7 +11,7 @@ import Login from './Components/Pages/Login/Login';
 import Register from './Components/Pages/Register/Register';
 import AuthProvider from './Context/AuthProvider';
 import PrivetRoute from './PrivetRoute/PrivetRoute';
-import SingleService from './Components/Pages/SingleService/SingleService';
+import SingleServiceDetails from './Components/Pages/SingleService/SingleServiceDetails';
 
 
 
@@ -32,7 +32,7 @@ const App = () =>
             <About />
           </Route>
           <PrivetRoute exact path='/services/:idService'>
-            <SingleService/>
+            <SingleServiceDetails/>
           </PrivetRoute>
           <PrivetRoute exact path='/services'>
             <Services />
