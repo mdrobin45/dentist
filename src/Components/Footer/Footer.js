@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Footer.css'
-import logo from '../images/logo.png'
+import logo from '../images/footer-logo.png'
 import { ImFacebook } from 'react-icons/im';
 import { BsTwitter,BsInstagram,BsLinkedin } from 'react-icons/bs';
 
 const Footer = () => {
     return (
-        <div className=''>
+        <div>
             <section className='container justify-between md:flex md:text-left py-10 text-center'>
                 <div>
                     <NavLink to='/home'><img className='w-full' src={logo} alt="Logo" /></NavLink>
